@@ -4,12 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;500;800&family=Montserrat:wght@300;700;800&family=Roboto:wght@300;700;900&display=swap"
+        rel="stylesheet">
+
+
     <link rel="stylesheet" href="./css/main.css">
     <title>Current weather</title>
 </head>
 
 <body>
-<div class="weather__card"></div>
+    <div class="card">
+        <h1>weather app</h1>
+        <div class="card__top-info">
+            <div class="input-box">
+                <h3 class="city-name"></h3>
+                <input type="text" placeholder="Type name of city..." id="type-city"><button>Send</button>
+                <p class="warning"></p>
+            </div>
+            <img src="./img/weather.svg" alt="animation introducing the weather">
+        </div>
+        <div class="card__bottom-result">
+            <div class="headings">
+                <p>Weather:</p>
+                <p>Temperature:</p>
+                <p>Humadity:</p>
+            </div>
+            <div class="weather-results">
+                <p class="weather"></p>
+                <p class="temperature"></p>
+                <p class="humidity"></p>
+            </div>
+        </div>
+
+    </div>
 
     <script src="./script.js"></script>
 </body>
