@@ -125,7 +125,7 @@ body {
 		}
 	}
 }
-@media (max-width: 768px) {
+@media (max-width: 495px) {
 	body {
 		padding: 25px;
 	}
@@ -137,8 +137,8 @@ body {
 		}
 		padding: 5px 10px;
 		img {
-			height: 100px;
-			width: 100px;
+			height: 120px;
+			width: 120px;
 		}
 		&__top-info {
 			.input-box {
@@ -146,7 +146,9 @@ body {
 				width: 65%;
 				position: relative;
 				h3 {
-					font-size: 26px;
+					font-size: 28px;
+					text-align: left;
+					padding-left: 40px;
 				}
 				.warning {
 					font-size: 14px;
@@ -159,7 +161,7 @@ body {
 				}
 				button {
 					top: 80%;
-					right: 60%;
+					right: unset;
 				}
 			}
 		}
@@ -168,11 +170,24 @@ body {
 				height: 35%;
 				text-transform: uppercase;
 				border-bottom: 2px solid white;
-				font-size: 10px;
+				font-size: 12px;
 			}
 			.weather-results {
 				height: 65%;
-				font-size: 12px;
+				font-size: 14px;
+			}
+		}
+	}
+}
+@media (min-width: 496px) and (max-width: 769px) {
+	.card {
+		&__top-info {
+			.input-box {
+				button {
+					bottom: 0;
+					top: unset;
+					right: unset;
+				}
 			}
 		}
 	}

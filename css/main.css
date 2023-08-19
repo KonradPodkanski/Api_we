@@ -126,7 +126,7 @@ body {
   height: 65%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 495px) {
   body {
     padding: 25px;
   }
@@ -138,8 +138,8 @@ body {
     font-size: 32px;
   }
   .card img {
-    height: 100px;
-    width: 100px;
+    height: 120px;
+    width: 120px;
   }
   .card__top-info .input-box {
     height: 100%;
@@ -147,7 +147,9 @@ body {
     position: relative;
   }
   .card__top-info .input-box h3 {
-    font-size: 26px;
+    font-size: 28px;
+    text-align: left;
+    padding-left: 40px;
   }
   .card__top-info .input-box .warning {
     font-size: 14px;
@@ -160,16 +162,23 @@ body {
   }
   .card__top-info .input-box button {
     top: 80%;
-    right: 60%;
+    right: unset;
   }
   .card__bottom-result .headings {
     height: 35%;
     text-transform: uppercase;
     border-bottom: 2px solid white;
-    font-size: 10px;
+    font-size: 12px;
   }
   .card__bottom-result .weather-results {
     height: 65%;
-    font-size: 12px;
+    font-size: 14px;
+  }
+}
+@media (min-width: 496px) and (max-width: 769px) {
+  .card__top-info .input-box button {
+    bottom: 0;
+    top: unset;
+    right: unset;
   }
 }/*# sourceMappingURL=main.css.map */
