@@ -10,22 +10,24 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
-}
-body h1 {
-  letter-spacing: 2px;
   color: white;
-  text-transform: uppercase;
-  text-align: center;
+  background-image: linear-gradient(to top, #9890e3 0%, #b1f4cf 100%);
 }
 
 .card {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.3);
   padding: 10px 20px;
   border: 2px solid white;
   width: 800px;
   height: 400px;
   border-radius: 12px;
+}
+.card h1 {
+  letter-spacing: 2px;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 42px;
 }
 .card__top-info {
   height: 200px;
@@ -34,8 +36,8 @@ body h1 {
   justify-content: space-around;
 }
 .card__top-info img {
-  height: 140px;
-  width: 140px;
+  height: 180px;
+  width: 180px;
   -o-object-fit: contain;
      object-fit: contain;
 }
@@ -48,6 +50,7 @@ body h1 {
   padding-top: 10px;
   font-size: 36px;
   text-align: center;
+  text-transform: uppercase;
 }
 .card__top-info .input-box .warning {
   color: rgb(222, 51, 21);
@@ -57,7 +60,6 @@ body h1 {
 .card__top-info .input-box input,
 .card__top-info .input-box button {
   position: absolute;
-  top: 40%;
 }
 .card__top-info .input-box input {
   font-size: 16px;
@@ -69,6 +71,7 @@ body h1 {
   border-bottom: 2px solid #fff;
   margin-right: 10px;
   left: 0;
+  top: 40%;
 }
 .card__top-info .input-box button {
   background-color: white;
@@ -79,6 +82,7 @@ body h1 {
   padding: 10px 20px;
   transition: box-shadow 0.15s, transform 0.15s;
   right: 0;
+  top: 43%;
 }
 .card__top-info .input-box button:focus {
   box-shadow: #d6d6e7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #d6d6e7 0 -3px 0 inset;
@@ -90,6 +94,12 @@ body h1 {
 .card__top-info .input-box button:active {
   box-shadow: #d6d6e7 0 3px 7px inset;
   transform: translateY(2px);
+}
+.card__top-info .input-box ::-moz-placeholder {
+  color: white;
+}
+.card__top-info .input-box ::placeholder {
+  color: white;
 }
 .card__bottom-result {
   height: 120px;
@@ -109,33 +119,26 @@ body h1 {
   height: 35%;
   text-transform: uppercase;
   border-bottom: 2px solid white;
+  font-size: 18px;
 }
 .card__bottom-result .weather-results {
   height: 65%;
-  font-size: 26px;
 }
 
 @media (max-width: 768px) {
   body {
     padding: 25px;
   }
-  h1 {
-    padding-top: 5px;
-    font-size: 26px;
-  }
   .card {
     padding: 5px 10px;
+  }
+  .card h1 {
+    padding-top: 15px;
+    font-size: 32px;
   }
   .card img {
     height: 100px;
     width: 100px;
-    -o-object-fit: contain;
-       object-fit: contain;
-  }
-  .card__top-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
   }
   .card__top-info .input-box {
     height: 100%;
@@ -143,55 +146,29 @@ body h1 {
     position: relative;
   }
   .card__top-info .input-box h3 {
-    padding-top: 10px;
-    font-size: 32px;
-    text-align: center;
+    font-size: 26px;
   }
   .card__top-info .input-box .warning {
-    color: rgb(222, 51, 21);
-    position: absolute;
-    bottom: 60px;
-  }
-  .card__top-info .input-box input {
-    position: absolute;
-    top: 40%;
-    margin: 0;
+    font-size: 14px;
+    bottom: 65px;
   }
   .card__top-info .input-box input {
     font-size: 14px;
     padding: 5px 10px;
-    color: #fff;
+    margin: 0;
   }
   .card__top-info .input-box button {
-    background-color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    padding: 10px 20px;
     top: 80%;
     right: 60%;
-  }
-  .card__bottom-result {
-    height: 120px;
-  }
-  .card__bottom-result .headings,
-  .card__bottom-result .weather-results {
-    display: flex;
-    align-items: center;
-  }
-  .card__bottom-result .headings p,
-  .card__bottom-result .weather-results p {
-    width: 33.3%;
-    text-align: center;
-    color: white;
   }
   .card__bottom-result .headings {
     height: 35%;
     text-transform: uppercase;
     border-bottom: 2px solid white;
-    font-size: 14px;
+    font-size: 10px;
   }
   .card__bottom-result .weather-results {
     height: 65%;
-    font-size: 16px;
+    font-size: 12px;
   }
 }/*# sourceMappingURL=main.css.map */
